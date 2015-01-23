@@ -1,5 +1,5 @@
 describe('arrayMerge', function() {
-  it ('merges two sorted arrays', function() {
+  it ('merges two sorted arrays, sorted', function() {
     var a = [1, 4, 6];
     var b = [2, 7, 9];
 
@@ -8,7 +8,7 @@ describe('arrayMerge', function() {
     expect(c).toEqual([1, 2, 4, 6, 7, 9]);
   });
 
-  it ('merges two sorted arrays with a shared value', function() {
+  it ('merges two sorted arrays with a shared value, sorted', function() {
     var a1 = [5, 11, 33, 99];
     var a2 = [1, 6, 8, 33];
 
@@ -17,7 +17,7 @@ describe('arrayMerge', function() {
     expect(a3).toEqual([1, 5, 6, 8, 11, 33, 33, 99]);
   });
 
-  it ('merges unsorted arrays', function() {
+  it ('merges unsorted arrays and returns sorted', function() {
     var arr1 = [30, 41, 4, 62, 57];
     var arr2 = [46, 36, 82, 13, 80];
 
